@@ -7,6 +7,12 @@ class HomeController extends Controller {
     const { ctx } = this;
     ctx.body = 'hi, egg';
   }
+
+  async userlist() {
+    const { ctx, service } = this;
+    const result = await service.home.userlist()
+    ctx.body = result
+  }
 }
 
 module.exports = HomeController;
