@@ -22,4 +22,4 @@ module.exports = (options) => {
         console.log("🚀 ~ file: gzip.js:22 ~ gzip ~ stream:", stream);
         ctx.set('Content-Encoding', 'gzip');
     }
-}
+};
