@@ -19,6 +19,7 @@ module.exports = (options) => {
         // 设置 gzip body，修正响应头
         const stream = zlib.createGzip();
         ctx.body = stream;
+        console.log("🚀 ~ file: gzip.js:22 ~ gzip ~ stream:", stream)
         ctx.set('Content-Encoding', 'gzip');
     }
 }
