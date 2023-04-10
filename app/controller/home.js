@@ -10,8 +10,8 @@ class HomeController extends Controller {
 
   async userlist() {
     const { ctx, service } = this;
-    const result = await service.home.userlist()
-    ctx.body = result
+    const result = await service.home.userlist();
+    ctx.body = result;
   }
 }
 

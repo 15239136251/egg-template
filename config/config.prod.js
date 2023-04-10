@@ -1,44 +1,41 @@
 'use strict';
 console.log('prod');
 
-/**
- * @param {Egg.EggAppInfo} appInfo app info
- */
-module.exports = appInfo => {
-    /**
+module.exports = () => {
+  /**
    * built-in config
    * @type {Egg.EggAppConfig}
    **/
-    const config = exports = {};
-    
-    // add your mysql config
-    config.mysql = {
-        // 单数据库信息配置
-        client: {
-            // IP
-            host: '1.116.143.16',
-            // 端口号
-            port: '3306',
-            // 用户名
-            user: 'root',
-            // 密码
-            password: 'quhaibin',
-            // 数据库名
-            database: 'all_system',
-        },
-        // 是否加载到 app 上，默认开启
-        app: true,
-        // 是否加载到 agent 上，默认关闭
-        agent: false,
-    };
+  const config = exports = {};
 
-    // add your user config here
-    const userConfig = {
-        // myAppName: 'egg',
-    };
+  // add your mysql config
+  config.mysql = {
+    // 单数据库信息配置
+    client: {
+      // IP
+      host: '1.116.143.16',
+      // 端口号
+      port: '3306',
+      // 用户名
+      user: 'root',
+      // 密码
+      password: 'quhaibin',
+      // 数据库名
+      database: 'all_system',
+    },
+    // 是否加载到 app 上，默认开启
+    app: true,
+    // 是否加载到 agent 上，默认关闭
+    agent: false,
+  };
 
-    return {
-        ...config,
-        ...userConfig,
-    };
+  // add your user config here
+  const userConfig = {
+    // myAppName: 'egg',
+  };
+
+  return {
+    ...config,
+    ...userConfig,
+  };
 };

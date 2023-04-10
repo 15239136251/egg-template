@@ -12,10 +12,10 @@ module.exports = {
   },
   jwt: {
     enable: true,
-    package: 'egg-jwt'
+    package: 'egg-jwt',
   },
   cors: {
     enable: true,
-    package: 'egg-cors'
-  }
+    package: 'egg-cors',
+  },
 };

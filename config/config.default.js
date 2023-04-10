@@ -16,7 +16,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1680587205819_3487';
 
   // add your middleware config here
-  config.middleware = ['gzip'];
+  config.middleware = [ 'gzip' ];
 
   // 配置 gzip 中间件的配置
   config.gzip = {
@@ -27,13 +27,13 @@ module.exports = appInfo => {
     listen: {
       path: '',
       port: 8008,
-      hostname: '127.0.0.1'
-    }
+      hostname: '127.0.0.1',
+    },
   };
 
   // 添加jwt
   config.jwt = {
-    secret: '123456'
+    secret: '123456',
   };
 
   config.security = {

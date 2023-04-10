@@ -1,5 +1,6 @@
 'use strict';
 
 module.exports = app => {
-    // const 
-}
+  // const
+  return app;
+};
